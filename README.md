@@ -30,13 +30,13 @@ cd Livestock-Guarding-System
 pip install -r requirements.txt
 ```
 
-Inference using Native Pytorch
+Inference using Native Pytorch (Run in terminal)
 
 ```
 python3 detect_without_jit.py --weights best_292.pt --conf 0.50 --source test_video.mp4 
 ```
 
-Inference using Torch-ort
+Inference using Torch-ort (Run in terminal)
 
 ```
 python3 detect_ort.py --weights best_292.pt --conf 0.50 --source test_video.mp4 
