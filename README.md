@@ -30,6 +30,12 @@ cd Livestock-Guarding-System
 pip install -r requirements.txt
 ```
 
+Access ORTModule
+
+```
+python3 -m onnxruntime.training.ortmodule.torch_cpp_extensions.install
+```
+
 Inference using Native Pytorch 
 
 ```
