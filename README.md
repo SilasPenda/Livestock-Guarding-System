@@ -2,6 +2,8 @@
 
 ## Test 
 
+NB: Linux machine only (Can use Colab)
+
 Download weights
 
 ```
@@ -31,11 +33,11 @@ pip install -r requirements.txt
 Inference using Native Pytorch
 
 ```
-python3 detect_without_jit.py --weights best.pt --conf 0.50 --source test_video.mp4 
+python3 detect_without_jit.py --weights best_292.pt --conf 0.50 --source test_video.mp4 
 ```
 
 Inference using Torch-ort
 
 ```
-python3 detect_ort.py --weights best.pt --conf 0.25 --source test_video.mp4 
+python3 detect_ort.py --weights best_292.pt --conf 0.50 --source test_video.mp4 
 ```
