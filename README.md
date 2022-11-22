@@ -31,7 +31,7 @@ pip install -r requirements.txt
 Inference using Native Pytorch
 
 ```
-python3 detect_without_jit.py --weights best.pt --conf 0.25 --source test_video.mp4 
+python3 detect_without_jit.py --weights best.pt --conf 0.50 --source test_video.mp4 
 ```
 
 Inference using Torch-ort
