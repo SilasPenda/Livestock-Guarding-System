@@ -2,6 +2,12 @@
 
 ## Test 
 
+Download weights
+
+```
+https://drive.google.com/file/d/124TxRpALLUb7zvGgOPpRs6JD5dcrP4_z/view?usp=sharing
+```
+
 Create a Virtual environment.
 
 ```
