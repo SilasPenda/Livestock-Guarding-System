@@ -1,6 +1,6 @@
 # Livestock-Guard-System
 
-## Test 
+## Inference test on CPU
 
 NB: Linux machine only (Can use Colab)
 
