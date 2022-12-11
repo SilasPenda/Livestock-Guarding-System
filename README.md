@@ -1,8 +1,6 @@
 # Livestock-Guard-System
 
-## Inference test on CPU
-
-NB: Linux machine only (Can use Colab)
+## Inference test
 
 Download weights
 
@@ -36,13 +34,20 @@ Access ORTModule
 python3 -m onnxruntime.training.ortmodule.torch_cpp_extensions.install
 ```
 
-Inference using Native Pytorch 
+Inference using Native Pytorch using GPU
+
+```
+python3 detect.py --weights best.pt --conf 0.50 --source test_video.mp4 
+```
+
+Inference using Native Pytorch using CPU
 
 ```
 python3 detect_without_jit.py --weights best.pt --conf 0.50 --source test_video.mp4 
 ```
 
-Inference using Torch-ort
+Inference using Torch-ort using CPU \
+NB: Linux machine only (Can use Colab)
 
 ```
 python3 detect_ort.py --weights best.pt --conf 0.50 --source test_video.mp4 
