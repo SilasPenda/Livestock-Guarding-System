@@ -12,7 +12,7 @@ Create a Virtual environment.
 
 ```
 pip install virtualenv
-virtualenv -p /usr/bin/python2.8 [env-name]
+virtualenv -p /usr/bin/python3.8 [env-name]
 ```
 
 Activate Virtual environment.
@@ -28,12 +28,6 @@ cd Livestock-Guarding-System
 pip install -r requirements.txt
 ```
 
-Access ORTModule
-
-```
-python3 -m onnxruntime.training.ortmodule.torch_cpp_extensions.install
-```
-
 Inference using Native Pytorch using GPU
 
 ```
@@ -47,8 +41,14 @@ python3 detect_without_jit.py --weights best.pt --conf 0.50 --source test_video.
 ```
 
 Inference using Torch-ort using CPU \
-NB: Linux machine only (Can use Colab)
+NB: Linux machine only (Can use Colab) \
 
+Access ORTModule
+
+```
+python3 -m onnxruntime.training.ortmodule.torch_cpp_extensions.install
+```
+Run Inference
 ```
 python3 detect_ort.py --weights best.pt --conf 0.50 --source test_video.mp4 
 ```
